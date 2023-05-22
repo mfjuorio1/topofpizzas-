@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-carousel.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon-slice2.ico">
+    <link rel="validar" href="./index_dom.js">
+    <title>TopOfPizzas</title>
+</head>
+<body>
+    <h1>TopOfPizzas</h1>
+    <h2>Pizzas de todo el mundo</h2>
+    <header>
+        <nav>
+                <a style="background-color: green; color:white" href="index.html">INICIO</a>
+                <a style="background-color: white; color:green" href="menu.html">MENU</a>
+                <a style="background-color: red; color: white" href="reservas con carrousel.html">RESERVAS</a>
+        </nav>
+    </header>
+   <h2 id="title">RESERVAS</h2>
+    <p id="description">Gracias por tu reserva - tolerancia máxima 30 minutos</p><br><br>
+    <div class="slider-container">
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--radio buttons end-->
+    <!---slides images start-->
+    <div class="slide first">
+        <img src="./img/BsAs2.JPG" alt="DE DIA">
+      </div>
+      <div class="slide" >
+        <h4>DE DIA</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ea.</p>
+      </div>
+      <div class="slide">
+        <img src="./img/NYC2.JPG" alt="de noche">
+      </div>
+    <div class="slide">
+        <h4>DE NOCHE</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <!---slides images end-->
+    <!---automatic navigation start-->
+    <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+    </div>
+    <!---automatic navigation end-->
+    <!---manual navigation start-->
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!---manual navigation end-->
+        </div>
+    </div>
+    <!--image slider end-->
+    <script type="text/javascript">
+        let counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+</div>
+<div>
+    <br><br>
+<form method="post"  id="booking-form" class="booking-form" action="https://formsubmit.co/mfjuorio@gmail.com" method="POST">
+    <!--acá falta un action que vaya a base de datos reemplazado por formsubmit.co-->
+   <fieldset>
+    <label for="name" id="name-label">Ingrese su nombre: <input id="name" name="name" type="text" placeholder="Nombre" title="solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required/></label> 
+    <br>
+    <label for="email" id="email-label">Ingrese su email: <input id="email" name="email" type="email" placeholder="Email" title="formato de email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required/></label> 
+    <br>
+    <label for="mobile" id="number-label">Ingrese su celular: <input type="phone" id="phone" name="phone" placeholder="Celular" title="codigo de area sin el 15" pattern="[0-9]{2-4}-[0-9]{4}-[0-9]{4}" required></label><!--lo saque de w3schools-->
+   <br>
+   <label for="date" id="number-date">Fecha de reserva: <input type="date" id="date" name="date" min="2023-05-25" max="2023-12-23" required></label>
+   <!--<p>Te contactaremos a la brevedad</p>-->
+   <!-- en este imput habria que ver como se pone un min-value="today"max-value="today+a-month" por ejemplo-->
+    <br>
+    </fieldset>
+    <fieldset>
+    <legend> ¿Cuántos vienen? ¿Almuerzo o cena? ¿Pedidos especiales? </legend>
+    <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Me gustaría que..." title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
+    <br>
+    </fieldset>
+    <input type="submit" id="submit" value="Enviar"/>   
+</form>
+</div>
+<footer>
+  <p class="footer">
+    <a href="https://mfjuorio1.github.io/topofpizzas-/" target="_blank">Visita nuestra página</a>
+    <!--este link es el del repositorio final. Faltan iconos de las redes sociales-->
+    <a href="contact.html">Contacto</a>
+  </p>
+  <p class="address">4321 Rosario - Buenos Aires - Argentina</p>
+  <p>TopOfPizzas  - Codo a codo - 2023&copy;</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-menu.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon-slice2.ico">
+    <link rel="validar" href="./index_dom.js">
+    <title>TopOfPizzas</title>
+</head>
+<body>
+    <h1>TopOfPizzas</h1>
+    <h2>Pizzas de todo el mundo</h2>
+    <header>
+        <nav>
+                <a style="background-color: green; color:white" href="index.html">INICIO</a>
+                <a style="background-color: white; color:green" href="menu.html">MENU</a>
+                <a style="background-color: red; color: white" href="reservas con carrousel.html">RESERVAS</a>
+        </nav>
+    </header>
+   <h2 id="title">CONTACTO</h2>
+   <form method="post"  id="contact-form" class="contact-form" action="https://formsubmit.co/mfjuorio@gmail.com" method="POST">
+      <fieldset>
+        <!--esto lo puse en otra página siguiendo la sugerencia de Joaquín de las fotos de los clientes
+        pero hay que lograr que funcione el input de esa foto-->
+        <label for="visit" title="Por favor, completar" required>Ya viniste? 
+        <label for="Yes"><input id="Yes" type="radio" name="visit-type" value="Yes"/> Si!</label>
+        <label for="No"><input id="No" type="radio" name="visit-type" value="No" /> No todavía</label>
+        <br><br>
+        <label for="recommend-type" title="Por favor, completar" required>Nos recomendarías?</label>
+        <br><br>
+        <label for="definitely"><input id="definitely" type="radio" name="recommend-type" value="3" /> Seguro</label>
+        <label for="maybe"><input id="maybe" type="radio" name="recommend-type" value="2" /> Puede ser</label>
+        <label for="not-sure"><input id="not-sure" type="radio" name="recommend-type" value="1" /> Para nada</label>
+        <br>
+        <p class="mejor">Qué podemos mejorar? (Click todo lo que creas que aplique)</p>
+          <label for="food"><input id="food" type="checkbox" name="to-improve-type" value="food"/> Comida</label>
+          <label for="att"><input id="att" type="checkbox" name="to-improve-type" value="att"/> Atencion</label>
+          <label for="amb"><input id="amb" type="checkbox" name="to-improve-type" value="amb"/> Ambiente</label>
+          <br><br>
+        <label for="interest" title="Por favor, completar" required> Que es lo que más te gustó?</label> 
+            <select id="dropdown" name="interest" class="form-control" required>
+              <option disabled="" selected="" value="">Elegí lo que más te gustó</option>
+              <option value="1">Comida</option>
+              <option value="2">Atención</option>
+              <option value="3">Ambiente</option>
+              <option value="4">Todo</option>
+        </select>
+    </fieldset>
+        <fieldset>
+        <legend> Comentarios o sugerencias? Pedidos especiales? </legend>
+        <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Me gustaría que..." title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
+        <br>
+    </fieldset>
+    <input type="submit" id="submit" value="Enviar"/>
+    <div class="booking-form-loader none">
+      <img src="./img/pizza-loader.svg" alt="Cargando">
+    </div>
+    <div class="booking-form-response none">
+      <p>Sus comentarios han sido enviados. Muchas gracias!</p>
+    </div>        
+    </form>
+    <footer>
+      <p>
+        <a href="https://mfjuorio1.github.io/topofpizzas-/" target="_blank">Visita nuestra página</a>
+        <!--este link es el del repositorio final. Faltan iconos de las redes sociales-->
+        <a href="contact.html">Contacto</a>
+      </p>
+      <p class="address">4321 Rosario - Buenos Aires - Argentina</p>
+      <p>TopOfPizzas  - Codo a codo - 2023&copy;</p>
+    </footer>
+  </body>
+</html>

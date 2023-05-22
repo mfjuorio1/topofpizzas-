@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-index.css">
+    <title>TopOfPizzas</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon-slice2.ico">
+    <script src="https://kit.fontawesome.com/5aab645885.js" crossorigin="anonymous"></script>
+    <link rel="api" href="/javascript/consumirAPI.js">
+    </head>
+    <!--header y footer cambiados a TopOfPizzas (Pizzerium y Pizzarium ya existen)-->
+<body>
+    <h1>TopOfPizzas</h1>
+    <h2>Pizzas de todo el mundo</h2>
+    <header>
+        <nav>
+                <a style="background-color: green; color:white" href="index.html">INICIO</a>
+                <a style="background-color: white; color:green" href="menu.html">MENU</a>
+                <a style="background-color: red; color: white" href="reservas con carrousel.html">RESERVAS</a>
+        </nav>
+    </header>
+        <main class="general">
+             <h2>BIENVENIDOS!</h2>
+             <script>
+                let texto = "             Hola!...Bienvenidos a Top Of Pizzas....Pizzas de todo el mundo... vengan a visitarnos y disfruten"
+                const hablar = (texto) => speechSynthesis.
+                speak(new SpeechSynthesisUtterance(texto));
+
+                hablar(texto);
+             </script>
+             <!--<div class="promo">
+                <h2>PROMOCIÓN</h2>
+                <img src="img/iprogress.jpeg" alt="wip" width="50%">
+                
+            </div>-->
+
+            <div class="slider-container">
+                <!--image slider start-->
+                <div class="slider">
+                    <div class="slides">
+                        <!--radio buttons start-->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <!--radio buttons end-->
+                <!---slides images start-->
+                <div class="slide first">
+                    <img src="./img/fabrizio-pullara-vHRFraV4U00-unsplash.jpg" alt="en el horno">
+                  </div>
+                  <div class="slide" >
+                    <h2>TE ESTAMOS ESPERANDO!</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/p1.jpeg" alt="con jamon">
+                  </div>
+                  <div class="slide">
+                    <img src="./img/micah-tindell-zCpJvXBBhCA-unsplash.jpg" alt="horno2">
+                  </div>
+                <div class="slide">
+                    <h2>LO MEJOR DE NOSOTROS</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/p5.jpeg" alt="cuatro quesos">
+                </div>
+                <!---slides images end-->
+                <!---automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!---automatic navigation end-->
+                <!---manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!---manual navigation end-->
+                    </div>
+                </div>
+                <!--image slider end-->
+                <script type="text/javascript">
+                    let counter = 1;
+                    setInterval(function(){
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++;
+                        if(counter > 4){
+                            counter = 1;
+                        }
+                    }, 5000);
+                </script>
+            
+            </div>
+             <!--<div class="grupoimg1">
+                <ul>
+                    <li> <img src="img/p1.jpeg" alt="pisa1"><img src="img/p2.webp" alt="pisa2"><img src="img/p3.jpg" alt="pisa3"><img src="img/p4.webp" alt="pisa4"> </li>
+                </ul>-->
+                <!-- deberian coincidir el nombre de las pizzas con las del menu, las fotos están muy buenas-->
+                <!--<ul>
+                    <li class="li2"><h3>Pizza Hinchada</h3> <h3>Pizza Pepperoni</h3> <h3>Pizza Variedad</h3> <h3>Pizza lacoste</h3></li>
+                    <li class="li3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quos, voluptatibus quo, rerum doloremque corrupti, consequatur culpa saepe nobis aliquam quidem praesentium minus in!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab rem aperiam nisi. Veniam recusandae a blanditiis voluptates placeat adipisci? Soluta officiis dolore totam?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, dolorem sit repudiandae provident libero rerum magnam explicabo nemo consequatur suscipit quos omnis in eum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, obcaecati laboriosam deleniti, quae suscipit et voluptatum, ipsa vel dolor officiis assumenda ea! Libero, voluptatem!</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li> <img src="img/p5.jpeg" alt="pisa5"><img src="img/p6.webp" alt="pisa6" width="40%"><img src="img/p7.jpeg" alt="pisa7"><img src="img/p8.jpeg" alt="pisa8"> </li>
+                </ul>
+                <ul>
+                    <li class="li2"><h3>Pizza Hinchada</h3> <h3>Pizza Pepperoni</h3> <h3>Pizza Variedad</h3> <h3>Pizza lacoste</h3></li>
+                    <li class="li3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quos, voluptatibus quo, rerum doloremque corrupti, consequatur culpa saepe nobis aliquam quidem praesentium minus in!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab rem aperiam nisi. Veniam recusandae a blanditiis voluptates placeat adipisci? Soluta officiis dolore totam?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, dolorem sit repudiandae provident libero rerum magnam explicabo nemo consequatur suscipit quos omnis in eum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, obcaecati laboriosam deleniti, quae suscipit et voluptatum, ipsa vel dolor officiis assumenda ea! Libero, voluptatem!</p>
+                    </li>
+                </ul>
+                
+                
+            </main>-->
+            <footer>
+                <p class="footer">
+                    <a href="https://mfjuorio1.github.io/topofpizzas-/" target="_blank">Visita nuestra página</a>
+                    <!--este link es el del repositorio final. Faltan iconos de las redes sociales-->
+                    <a href="contact.html">Contacto</a>
+                  </p>
+                  <p class="address">4321 Rosario - Buenos Aires - Argentina</p>
+        <div class="redes1">
+            <!--<div class="bienvenido">-->
+                <h3>¡Seguinos en nuestras redes!</h3>
+                <a href="" class="redes2"><i class="fa-brands fa-facebook" style="color: rgb(58, 27, 2);"></i></a>
+                <a href="" class="redes2"><i class="fa-brands fa-instagram" style="color: rgb(58, 27, 2);"></i></a>
+                <a href="" class="redes2"><i class="fa-brands fa-twitter" style="color: rgb(58, 27, 2);"></i></a>
+                <a href="" class="redes2"><i class="fa-brands fa-whatsapp" style="color: rgb(58, 27, 2);"></i></a>
+            <!--</div>
+            <ul class='redesL'>
+                <li><a href=""><img src="img/bxl-whatsapp.svg" alt="lwsp"> Whatsapp</a></li>
+                <li><a href=""><img src="img/bxl-instagram.svg" alt="lig">Instagram</a></li>
+                <li><a href=""><img src="img/bxl-twitter.svg" alt="ltw">Twitter</a></li>
+                <li><a href=""><img src="img/bxl-facebook-square.svg" alt="lfc">Facebook</a></li>
+            </ul>-->
+        </div>
+        <p>TopOfPizzas  - Codo a codo - 2023&copy;</p>
+    </footer>
+</body>
+</html>
