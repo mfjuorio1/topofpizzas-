@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(211, 115, 6);
+}
+
+.i.fa-solid fa-pizza-slice{
+  size:100px;
+  display: flex;
+  justify-content:center;
+}
+
+.contact {
+    font-family: Impact, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  .established {
+    font-style: italic;
+  }
+  
+  h1, h2, p {
+    
+    text-align: center;
+  }
+
+  h1, h2 {
+    font-family:Impact;
+  }
+  
+  .menu {
+    width: 90%;
+    background-color: rgb(170, 79, 4);
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 600px;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-25px;
+  }
+
+  .item p {
+display:inline-block;
+  }
+
+  .flavor, .beer, .mejor{
+    text-align: left;
+    width: 50%;
+  }
+  
+  .ingr, .sabor {
+    text-align: right;
+    width: 50%;
+  }
+
+  .none {
+    display: none;
+  }
+
+  /*****Responsive Slider Jon Mircha ****/
+  
+  /*.header {
+    z-index: 997;
+  }
+  .slider {
+    position: relative;
+    width: 80%;
+    margin:1rem auto;
+    text-align: center;
+    /*animation: slide 15s infinite;
+  }
+
+.slider-slides {
+  position: relative;
+  height: 400px;
+  /*animation: slide 15s infinite;
+}
+
+.slider-slide {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  opacity:0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+  /*animation: slide 15s infinite;
+}
+
+.slider-slide img {
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  object-position: 50% 50%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  /*animation: slide 15s infinite;
+}
+.slider-slide.active {
+  opacity:1;
+  visibility: visible;
+  /*animation: slide 15s infinite;/
+}
+
+.slider-btns{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display:flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.slider a{
+display:block;
+width: 4rem;
+height: 4rem;
+border-radius: 50%;
+border:thin solid #000;
+text-decoration: none;
+background-color:transparent;
+color:#000;
+transition: all 0.3s ease;
+}
+
+.slider a:hover {
+  color:#4d4d4d;
+}*/
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 2500px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 10px;
+  margin:10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+
+   .header {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    padding: 10px 20 px; 
+    border-radius: 5px;
+    text-decoration: none;
+    width:200px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#pizza-slice{
+display:flex;
+justify-content: center;
+zoom:200%;
+}
+
+#beer-mug{
+    display:flex;
+    justify-content: center;
+    zoom:200%;
+    }
+
+footer{
+    font-family: Impact,sans-serif;
+    font-size: small;
+}
