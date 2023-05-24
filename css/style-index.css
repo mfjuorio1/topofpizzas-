@@ -4,15 +4,16 @@ body{
     height: 100vh;
    
     background-color: rgb(211, 115, 6);
-    /*background-image:url(./img/p1.jpeg);*/
-    /*background-color opacity: 0.7;*/
+    
 }
 
-/*.background-image{
-    opacity: 0.2;
-    size-adjust: 1200px;
+.maps {
+display: flex;
+justify-content: center;
+size: 25px;
+border-radius: 25%;
+}
 
-}*/
 
 .slider-container{
     display: flex;
@@ -40,8 +41,9 @@ h1 {
   }
   
   h1, h2, h3, p {
-    font-family:Impact;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+    /*font-weight: bold;*/
   }
   
 .slider{
@@ -74,8 +76,9 @@ h1 {
 }
 
 .slide h4 {
-    font-family: Impact, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
+    font-weight: bold;
     color: rgb(15, 15, 15);
     display: flex;
     justify-content: center;
@@ -163,7 +166,7 @@ justify-content:center;
 }
 
 footer, .address{
-    font-family: Impact,sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 15px;
 }
 
@@ -219,7 +222,8 @@ h1 {
   }
   
   h1, h2, h3, p {
-    font-family:Impact;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /*font-weight: bold;*/
     text-align: center;
   }
   
@@ -253,8 +257,9 @@ h1 {
 }
 
 .slide h4 {
-    font-family: Impact, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
+    /*font-weight: bold;*/
     color: rgb(15, 15, 15);
     display: flex;
     justify-content: center;
@@ -342,7 +347,7 @@ justify-content:center;
 }
 
 footer, .address{
-    font-family: Impact,sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 15px;
 }
 
